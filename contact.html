@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta name="viewport" content="with=device-width" initial-scale="1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/0d13596a47.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.png" alt="logo of company"
+        /></a>
+        <div class="nav-links" id="navLinks()">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="about.html">محصولات</a></li>
+            <li><a href="course.html">گالری</a></li>
+            <li><a href="blog.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!--contact-us-->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414687.81334722636!2d51.06675322212331!3d35.70780509712802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1659192953017!5m2!1sen!2s"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span
+              ><h5>آدرس شرکت</h5>
+              <p>آدرس دفتر</p></span
+            >
+          </div>
+          <div>
+            <i class="fa fa-phone"></i
+            ><span
+              ><h5>0000000</h5>
+              <p>88888888</p></span
+            >
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i
+            ><span
+              ><h5>manager@email.com</h5>
+              <p>manager2@email.com</p></span
+            >
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="نام خود را وارد کنید"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="ایمیل خود را وارد کنید"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="محصول مورد نظر خود را وارد کنید"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="پیام"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">ارسال پیام</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+      <h4>ارتباط با ما</h4>
+      <p>متن ارتباط با ما</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by easy tutorials</p>
+    </section>
+
+    <!--JavaScript for Toggle  Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks()");
+      function showMenu() {
+        navLinks.style.left = "0";
+      }
+      function hideMenu() {
+        navLinks.style.left = "-200px";
+      }
+    </script>
+  </body>
+</html>

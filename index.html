@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta name="viewport" content="with=device-width" initial-scale="1.0" />
+    <title>وب سایت اولیه</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/0d13596a47.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.png" alt="logo of company"
+        /></a>
+        <div class="nav-links" id="navLinks()">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="about.html">محصولات</a></li>
+            <li><a href="course.html">گالری</a></li>
+            <li><a href="blog.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>بزرگترین تولیدکننده این محصول</h1>
+        <p>!از محصولات به روز ما دیدن کنید</p>
+        <a href="" class="hero-btn">از سایت ما دیدن کنید</a>
+      </div>
+    </section>
+    <!--mahsolat(cours)-->
+    <section class="course">
+      <h1>محصولات ما</h1>
+      <p>محصولات ما با بهتریت کیفیت</p>
+      <div class="row">
+        <div class="course-col">
+          <h3>محصول 1</h3>
+          <p>توضیحات محصول 1</p>
+        </div>
+        <div class="course-col">
+          <h3>محصول 2</h3>
+          <p>توضیحات محصول 2</p>
+        </div>
+        <div class="course-col">
+          <h3>محصول 3</h3>
+          <p>توضیحات محصول 3</p>
+        </div>
+      </div>
+    </section>
+    <!--gallery(campus)-->
+    <section class="campus">
+      <h1>گالری محصولات ما</h1>
+      <p>توضیحات گالری</p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/london.png" alt="an image of london city" />
+          <div class="layer">
+            <h3>محل شرکت</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/newyork.png" alt="an image of newyork city" />
+          <div class="layer">
+            <h3>دفتر شرکت</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/washington.png" alt="an image of washington city" />
+          <div class="layer">
+            <h3>واحد فروش</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--facilities(darbare ma)-->
+    <section class="facilieties">
+      <h1>درباره ما</h1>
+      <p>توضیحات درباره ما</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library.png" alt="image of library" />
+          <h3>توضیح 1</h3>
+          <p>متن توضیح 1</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/basketball.png" alt="image of basketball court" />
+          <h3>توضیح 2</h3>
+          <p>متن توضیح 2</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cafeteria.png" alt="image of cafeteria" />
+          <h3>توضیح 3</h3>
+          <p>متن توضیح 3</p>
+        </div>
+      </div>
+    </section>
+    <!--testimonials(nazar)-->
+    <section class="testimonials">
+      <h1>نظری مشتری</h1>
+      <p>متن نظر مشتری</p>
+      <div class="row">
+        <div class="testimonials-col">
+          <img src="images/user1.jpg" alt=" profile image of user one" />
+          <div>
+            <p>متن مشتری 1</p>
+            <h3>مشتری 1</h3>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonials-col">
+          <img src="images/user2.jpg" alt="profile image of user two" />
+          <div>
+            <p>متن مشتری 2</p>
+            <h3>مشتری 2</h3>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--call to action-->
+    <section class="cta">
+      <h1>ارتباط با ما</h1>
+      <a href="" class="hero-btn">تماس با ما</a>
+    </section>
+    <!--footer-->
+    <section class="footer">
+      <h4>ارتباط با ما</h4>
+      <p>متن ارتباط با ما</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by easy tutorials</p>
+    </section>
+    <!--JavaScript for Toggle  Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks()");
+      function showMenu() {
+        navLinks.style.left = "0";
+      }
+      function hideMenu() {
+        navLinks.style.left = "-200px";
+      }
+    </script>
+  </body>
+</html>

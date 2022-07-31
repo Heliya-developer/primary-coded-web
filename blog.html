@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta name="viewport" content="with=device-width" initial-scale="1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/0d13596a47.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.png" alt="logo of company"
+        /></a>
+        <div class="nav-links" id="navLinks()">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="about.html">محصولات</a></li>
+            <li><a href="course.html">گالری</a></li>
+            <li><a href="blog.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Blog</h1>
+    </section>
+    <!--blog-page-content-->
+    <section class="blog-contect">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/certificate.jpg" alt="image of certificate" />
+          <h2>توضیحات بلاگ</h2>
+          <p>متن بلاگ</p>
+          <br />
+          <p>توضیحات</p>
+          <br />
+          <p>توضیحات</p>
+          <br />
+          <p>توضیحات</p>
+          <div class="comment-box">
+            <h3>نظر خود را برای ما بفرستید</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="نام خود را وارد کنید" />
+              <input type="email" placeholder="ایمیل خود را وارد کنید" />
+              <textarea rows="5" placeholder="نظر شما"></textarea>
+              <button type="submit" class="hero-btn red-btn">ارسال نظر</button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Categouries</h3>
+          <div>
+            <span>انالز بیزنس</span>
+            <span>20</span>
+          </div>
+          <div>
+            <span>انالز بیزنس</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>انالز بیزنس</span>
+            <span>22</span>
+          </div>
+          <div>
+            <span>انالز بیزنس</span>
+            <span>23</span>
+          </div>
+          <div>
+            <span>انالز بیزنس</span>
+            <span>24</span>
+          </div>
+          <div>
+            <span>انالز بیزنس</span>
+            <span>25</span>
+          </div>
+          <div>
+            <span>انالز بیزنس</span>
+            <span>26</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+      <h4>ارتباط با ما</h4>
+      <p>متن ارتباط با ما</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by easy tutorials</p>
+    </section>
+
+    <!--JavaScript for Toggle  Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks()");
+      function showMenu() {
+        navLinks.style.left = "0";
+      }
+      function hideMenu() {
+        navLinks.style.left = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta name="viewport" content="with=device-width" initial-scale="1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/0d13596a47.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.png" alt="logo of company"
+        /></a>
+        <div class="nav-links" id="navLinks()">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="about.html">محصولات</a></li>
+            <li><a href="course.html">گالری</a></li>
+            <li><a href="blog.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <!--about-us-content-->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>ما تنها تولید کننده این محصول هستیم</h1>
+          <p>متن درباره ما</p>
+          <a href="" class="hero-btn red-btn"> جست و جو کنید</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" alt="image of about" />
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+      <h4>ارتباط با ما</h4>
+      <p>متن ارتباط با ما</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by easy tutorials</p>
+    </section>
+
+    <!--JavaScript for Toggle  Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks()");
+      function showMenu() {
+        navLinks.style.left = "0";
+      }
+      function hideMenu() {
+        navLinks.style.left = "-200px";
+      }
+    </script>
+  </body>
+</html>
